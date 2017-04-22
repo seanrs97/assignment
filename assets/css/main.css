@@ -1095,7 +1095,7 @@
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-			color: #b3d9ff;
+			color: #80bfff;
 			text-decoration: none;
 		}
 
@@ -1486,7 +1486,7 @@
 /* Feature List */
 
 	.feature-list h3 {
-		color: #b3d9ff!important;
+		color: #80bfff!important;
 	}
 
 		.feature-list h3:before {
@@ -1562,13 +1562,13 @@
 			}
 
 		.wrapper.style1 {
-			background: #b3d9ff url("images/overlay.png");
+			background: #80bfff url("images/overlay.png");
 			color: #eee;
 			color: rgba(255, 255, 255, 0.75);
 		}
 
 			.wrapper.style1 .title {
-				background: #b3d9ff url("images/overlay.png");
+				background: #80bfff url("images/overlay.png");
 				color: #fff;
 			}
 
