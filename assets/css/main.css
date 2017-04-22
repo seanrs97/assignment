@@ -1075,7 +1075,7 @@
 	body, input, textarea, select {
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 400;
-		color: #919499;
+		color: #0052cc;
 	}
 
 	body.is-loading * {
@@ -1360,7 +1360,7 @@
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #f98780;
+			background-color: #99ccff;
 		}
 
 		input[type="button"].style1,
@@ -1377,7 +1377,7 @@
 			input[type="reset"].style1:hover,
 			button.style1:hover,
 			.button.style1:hover {
-				background-color: #f98780;
+				background-color: #99ccff;
 			}
 
 			input[type="button"].style1:active,
@@ -1428,7 +1428,7 @@
 			input[type="reset"].style3:hover,
 			button.style3:hover,
 			.button.style3:hover {
-				background-color: #3f434b;
+				background-color: #0059b3;
 			}
 
 			input[type="button"].style3:active,
