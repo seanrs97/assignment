@@ -1587,7 +1587,6 @@
 
 		.wrapper.style3 {
 			background: #f3f3f3 url("images/overlay.png");
-			opacity:0.75;
 		}
 
 			.wrapper.style3 .title {
@@ -1602,6 +1601,7 @@
 	#header-wrapper {
 		background: url("../../images/main-image.jpg") center center;
 		background-size: cover;
+		opacity:0.75;
 	}
 
 		#header-wrapper:before {
