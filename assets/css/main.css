@@ -1966,6 +1966,10 @@
 			#intro-wrapper {
 				padding-bottom: 8em;
 			}
+			#intro-wrapper ul{
+				margin-top:20px;
+				text-align:left;
+			}
 
 		/* Header */
 
