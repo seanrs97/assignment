@@ -1970,6 +1970,12 @@
 				margin-top:20px;
 				text-align:left;
 			}
+			#intro-wrapper strong {
+				font-size:1.2em;
+			}
+			#intro-wrapper h3 {
+				font-size:1.4em;
+			}
 
 		/* Header */
 
