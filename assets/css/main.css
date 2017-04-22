@@ -1368,7 +1368,7 @@
 		input[type="reset"].style1,
 		button.style1,
 		.button.style1 {
-			background: #b3d9ffurl("images/overlay.png");
+			background: #80bfff url("images/overlay.png");
 			color: #fff;
 		}
 
@@ -1974,7 +1974,7 @@
 				margin: 14px 0;
 			}
 			#intro-wrapper strong {
-				font-size:1.2em;
+				font-size:1.3em;
 			}
 			#intro-wrapper h2 {
 				font-size:1.6em;
