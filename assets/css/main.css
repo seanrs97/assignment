@@ -1368,7 +1368,7 @@
 		input[type="reset"].style1,
 		button.style1,
 		.button.style1 {
-			background: #e97770 url("images/overlay.png");
+			background: #b3d9ffurl("images/overlay.png");
 			color: #fff;
 		}
 
@@ -1486,7 +1486,7 @@
 /* Feature List */
 
 	.feature-list h3 {
-		color: #e97770 !important;
+		color: #b3d9ff!important;
 	}
 
 		.feature-list h3:before {
@@ -1562,13 +1562,13 @@
 			}
 
 		.wrapper.style1 {
-			background: #e97770 url("images/overlay.png");
+			background: #b3d9ff url("images/overlay.png");
 			color: #eee;
 			color: rgba(255, 255, 255, 0.75);
 		}
 
 			.wrapper.style1 .title {
-				background: #e97770 url("images/overlay.png");
+				background: #b3d9ff url("images/overlay.png");
 				color: #fff;
 			}
 
