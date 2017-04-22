@@ -1970,11 +1970,15 @@
 				margin-top:20px;
 				text-align:left;
 			}
+			#intro-wrapper li{
+				margin: 10px 0;
+			}
 			#intro-wrapper strong {
 				font-size:1.2em;
 			}
 			#intro-wrapper h3 {
-				font-size:1.4em;
+				font-size:1.6em;
+				text-align:center;
 			}
 
 		/* Header */
