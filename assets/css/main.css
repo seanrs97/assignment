@@ -1095,7 +1095,7 @@
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-			color: #80bfff;
+			color: white;
 			text-decoration: none;
 		}
 
@@ -1368,7 +1368,7 @@
 		input[type="reset"].style1,
 		button.style1,
 		.button.style1 {
-			background: #80bfff url("images/overlay.png");
+			background: #b3d1ff url("images/overlay.png");
 			color: #fff;
 		}
 
@@ -1486,7 +1486,7 @@
 /* Feature List */
 
 	.feature-list h3 {
-		color: #80bfff!important;
+		color: #0047b3 !important;
 	}
 
 		.feature-list h3:before {
@@ -1562,13 +1562,13 @@
 			}
 
 		.wrapper.style1 {
-			background: #80bfff url("images/overlay.png");
+			background: #b3d1ff url("images/overlay.png");
 			color: #eee;
 			color: rgba(255, 255, 255, 0.75);
 		}
 
 			.wrapper.style1 .title {
-				background: #80bfff url("images/overlay.png");
+				background: #b3d1ff url("images/overlay.png");
 				color: #fff;
 			}
 
@@ -1601,7 +1601,6 @@
 	#header-wrapper {
 		background: url("../../images/main-image.jpg") center center;
 		background-size: cover;
-		opacity:0.75;
 	}
 
 		#header-wrapper:before {
@@ -1947,6 +1946,9 @@
 			.wrapper {
 				padding: 6em 0 9em 0;
 			}
+			#footer-wrapper{
+				padding:5em 0 1em 0;
+			}
 
 				.wrapper .title {
 					font-size: 0.9em;
@@ -1958,11 +1960,10 @@
 					margin-left: -12.5em;
 					padding-top: 0.5em;
 				}
-
+			/* NEW STUFF!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 			#header-wrapper {
 				padding: 0;
 			}
-
 			#intro-wrapper {
 				padding-bottom: 8em;
 			}
@@ -1979,6 +1980,42 @@
 			#intro-wrapper h2 {
 				font-size:1.6em;
 				text-align:center;
+			}
+			.hide{
+				display:none;
+			}
+			.learnButton{
+				margin-top:30px;
+			}
+			.icon-center{
+				text-align:center;
+				margin:0 auto;
+				width:8%;
+			}
+			#intro ul h3{
+				font-size:1.9em;
+				margin-top:30px;
+			}
+			#intro ul strong{
+				font-size:1.5em;
+			}
+			#intro h2{
+				margin-top:70px;
+				font-size:2em;
+			}
+			#map{
+				height:400px;
+				width:100%;
+				background-color:grey;
+			}
+			#userMap{
+				height:400px;
+				width:100%;
+				background-color:grey;
+			}
+			.gm-style .gm-style-iw {
+			   font-size: 16px;
+			   color:black;
 			}
 
 		/* Header */
@@ -2036,6 +2073,7 @@
 					border-radius: 0.35em;
 					box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
 					padding: 0 1.5em 0 1.5em;
+					background:rgba(160, 173, 207, 0.65)
 				}
 
 					#nav > ul > li {
@@ -2121,6 +2159,7 @@
 
 			#intro {
 				text-align: center;
+				
 			}
 
 				#intro > .style1 {
@@ -2183,13 +2222,13 @@
 			}
 
 			#footer hr {
-				margin: 6em 0 6em 0;
+				margin: 4em 0 4em 0;
 			}
 
 		/* Copyright */
 
 			#copyright {
-				margin: 6em 0 0 0;
+				margin: 1em 0 0 0;
 			}
 
 				#copyright ul {
@@ -2297,6 +2336,11 @@
 	@media screen and (max-width: 736px) {
 
 		/* Basic */
+			.learnButton{
+				visibility:hidden;
+				height:0;
+				width:0;
+			}
 
 			html, body {
 				overflow-x: hidden;
@@ -2311,7 +2355,7 @@
 			h2, h3, h4, h5, h6 {
 				font-size: 1.2em;
 				letter-spacing: 0.05em;
-				margin: 0 0 1em 0;
+				margin: 1em 0 1em 0;
 			}
 
 			hr {
@@ -2650,12 +2694,12 @@
 
 			#intro {
 				text-align: center;
-				padding: 1em 2em 1em 2em !important;
+				padding: 1,2em 2em 1em 2em !important;
 				margin: 0 auto;
 			}
 
 				#intro .style2 {
-					font-size: 1.5em;
+					font-size: 1.3em;
 					letter-spacing: 0.05em;
 					line-height: 1.25em;
 					padding: 1.25em;

@@ -40,46 +40,12 @@
 
 			<!-- Intro -->
 				<div id="intro-wrapper" class="wrapper style1">
-					<div class="title">Preparing for University</div>
-					<section id="intro" class="container">
-						<p class="style1">Still don't have a clue what you're doing? This is your starting point...</p>
-						<p class="style2">
-							The best way to start University is to<br class="mobile-hide" />
-							be open minded, organised and most importantly YOURSELF!!
-						</p>
-						<p class="style3"> University can be a daunting prospect for even the most confident and intelligent people
-										   so being anxious is completely normal. The best way to start university is to prepare for what
-										   you think may be a problem for you. By following the steps below, your preperation should be near 
-										   complete!!</p>
-						<ul>
-							<h3 class="icon fa fa-book "></h3><li> <strong>Step 1 - Research the course that you have chosen.</strong> This may appear very obvious, but this is one trick
-								 that many fail to do. Researching the content that you will be covering for the rest of the year is one 
-								 of the most important steps that you can take to advance your overall learning experience at university. Not
-								 only will give you an advantage over the other students, but it will also give you knowledge prior to being
-								 taught it, meaning you won't have to learn a million new things in the short space of the year!</li>
-							<h3 class="icon fa fa-map icon-center"></h3><li> <strong>Step 2 - Get to know the area.</strong> If you're moving to a new location to study like many students do, then
-								 it's probably a good idea to know the surroundings of the place you'll be living for a year. A good idea would be 
-								 to check out the universities website and check to see where all the buildings and campuses are located and how to get there
-							     . The same can be said about the city too! If you're going to be living there, you're going to want to venture off of campus
-								 a bit, so why not have a walk around the city or town and find out where everything is.</li>
-						   <h3 class="icon fa fa-users icon-center"></h3> <li> <strong> Step 3 - Make yourself some friends.</strong> Social life plays a big role of a university students life, and if you're
-								going to a university full of unfamilar faces, then it may seem impossible to have any kind of social life. But worry not, there
-								are many in the same boat as you, and they're all as anxious as you are, so you're not alone. The best way to get out and make 
-								some friends is to join a club! Joining a club will not only help you meet new people, but it will also give you something to do
-								in your spare time. If however, you're not interested in any of the universites clubs, the best thing to do, is simply talk to people!
-								they won't bite you and if anything they'll understand your position and welcome you to talk to them. </li>
-							<h3 class="icon fa fa-home icon-center"></h3><li> <strong> Step 4 - Get yourself a place to live! </strong> Perhaps this should be higher up on the list, because having a roof over your 
-								head is pretty darn important!! But that's not important, what is important, is finding a place to live! Most first year students
-								will find solace in the halls of residence that will likely be very close to the university. These are simply halls of room occupied by
-								students, this is defintely the option to go for if you're a socialite or want to make some friends. If however, you prefer things a 
-								bit quieter with less people, then a rented house is probably the way to go. Most universites will have a university zone for students
-								to live in, where you will have the oppurtunity to live in a shared house with other students or even on your own if you like!</li>
-							<h3 class="icon fa fa-smile-o icon-center"></h3><li> <strong> Step 5 - Remember to enjoy yourself! </strong> This is perhaps the most important step of all, just behind getting a good degree of course...
-								university is a once in a life experience and is likely the last real chance that many people will have to really enjoy themselves before
-								they are welcomed into the harsh reality of THE WORLD!! So whatever you do, enjoy yourself, party and have a good time... and of course get 
-								a degree at the end of it.</li>			
-							<h2> Now you're ready to go into the crazy world that is University!! </h2>
-						</ul>
+					<div class="title">Travelling here?</div>
+					<section id="intro" class="container mapCont">
+						
+						<p class = "style2"> Looking to travel to staffs? We have you covered!</p>
+						<p class = "style1" id = "userLocation"> Below are some local train stations to guide you to Staffs Uni</div>
+						<div id = "userMap"></div>
 					</section>
 				</div>
 
@@ -240,6 +206,9 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script async defer
+				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMA8ic4_Gyh0D7XUW9gBtrCcEwoBbBJ8E&libraries=places&callback=initMap">
+			</script>
 
 	</body>
 </html>

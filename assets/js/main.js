@@ -94,3 +94,92 @@
 	});
 
 })(jQuery);
+
+
+
+$(".read-more-content").addClass("hide")
+$(".read-more-show, .read-more-hide").removeClass("hide")
+
+$(".read-more-show").on("click",function(e){
+	$(this).next(".read-more-content").removeClass("hide");
+	$(this).addClass("hide");
+	e.preventDefault();
+});
+$(".read-more-hide").on("click",function(e){
+	var p = $(this).parent(".read-more-content");
+	p.addClass("hide");
+	p.prev(".read-more-show").removeClass("hide");
+	e.preventDefault();
+});
+
+
+function initMap() {
+	var uluru = {lat: 53.0091, lng: -2.1761};
+	var map = new google.maps.Map(document.getElementById('map'), {
+	  zoom: 14,
+	  center: uluru
+	});
+	var marker = new google.maps.Marker({
+	  position: uluru,
+	  map: map
+	});
+}
+
+
+let options = {
+  enableHighAccuracy: true,
+  timeout: 5000,
+  maximumAge: 0
+};
+
+const output = document.getElementById("userLocation");
+
+var map;
+var infowindow;
+
+function success(pos) {
+	
+	let latitude  = pos.coords.latitude;
+    let longitude = pos.coords.longitude;
+	let accuracy = pos.coords.accuracy;
+
+   // output.innerHTML = `Latitude is ${latitude} and Longitude is ${longitude}. More or less ${accuracy} metres.`;
+	
+	var pyrmont = {lat: latitude, lng: longitude};
+	map = new google.maps.Map(document.getElementById("userMap"), {
+		center: pyrmont,
+		zoom: 14
+	});
+	
+	infowindow = new google.maps.InfoWindow();
+	var service = new google.maps.places.PlacesService(map);
+	service.nearbySearch({
+		location: pyrmont,
+		radius: 5000,
+		type: ["train_station"]
+	}, callback);
+}
+function callback(results, status){
+	if(status === google.maps.places.PlacesServiceStatus.OK){
+		for(var i = 0; i < results.length; i++){
+			createMarker(results[i]);
+		}
+	}
+}
+function createMarker(place, text, label){
+	var placeLoc = place.geometry.location;
+	var marker = new google.maps.Marker({
+		map:map,
+		position: place.geometry.location,
+	});
+	google.maps.event.addListener(marker, "click",function(){
+		infowindow.setContent(place.name);
+		infowindow.open(map,this);
+	});
+}
+
+function error(err) {
+  console.warn(`ERROR(${err.code}): ${err.message}`);
+};
+
+navigator.geolocation.getCurrentPosition(success, error, options);
