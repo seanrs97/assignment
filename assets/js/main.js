@@ -183,3 +183,10 @@ function error(err) {
 };
 
 navigator.geolocation.getCurrentPosition(success, error, options);
+
+function loadUpScreen(param){
+	var time = param;
+	setTimeout(function(){
+		$("#loader-wrapper").hide();
+	},time);
+}

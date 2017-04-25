@@ -2,7 +2,11 @@
  "short_name": "Guide to Staffs",
   "name": "A guide to Staffordshire University",
   "start_url": "/?utm_source=index",
-
+  "theme_color": "#bdcfed",
+  "background_color": "#bdcfed",
+  "display": "standalone",
+  "orientation": "orientation",
+  
  "icons": [
   {
    "src": "\/android-icon-36x36.png",
