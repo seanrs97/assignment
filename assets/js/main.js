@@ -190,3 +190,15 @@ function loadUpScreen(param){
 		$("#loader-wrapper").hide();
 	},time);
 }
+
+
+
+var emailAdd = document.getElementById("email");
+
+emailAdd.addEventListener("keyup", function (event) {
+  if (emailAdd.validity.typeMismatch) {
+    emailAdd.setCustomValidity("Please input a valid email address");
+  } else {
+    emailAdd.setCustomValidity("");
+  }
+});

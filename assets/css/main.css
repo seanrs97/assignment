@@ -1196,10 +1196,10 @@
 		font-weight: 700;
 		color: #484d55;
 	}
-
 	form input[type="text"],
 	form input[type="email"],
 	form input[type="password"],
+	form input[type="number"],
 	form select,
 	form textarea {
 		-moz-transition: all .25s ease-in-out;
@@ -1343,7 +1343,7 @@
 		-ms-transition: all .25s ease-in-out;
 		transition: all .25s ease-in-out;
 		display: inline-block;
-		background: #0052cc;
+		background: #6da0f2;
 		text-align: center;
 		text-transform: uppercase;
 		font-weight: 700;
@@ -2036,6 +2036,9 @@
 			}
 			#loader-wrapper #splash h3{
 				color:white;
+			}
+			#mobile{
+				margin-bottom:40px;
 			}
 
 		/* Header */
