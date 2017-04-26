@@ -73,7 +73,7 @@ var CACHED_URLS = [
   BASE_PATH + 'assets/sass/ie8.scss',
   BASE_PATH + 'assets/sass/main.scss',
   BASE_PATH + 'assets/browserconfig.xml',
-  BASE_PATH + 'assets/js/offline-map.js'
+  BASE_PATH + 'assets/js/offline-map.js',
   BASE_PATH + 'assets/js/material.js',
   BASE_PATH + 'event-default.png',
   BASE_PATH + 'min-style.css',
