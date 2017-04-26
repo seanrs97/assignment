@@ -277,19 +277,12 @@
 			<script src="assets/js/main.js"></script>
 			<script type = "text/javascript" src = "assets/js/modernizr.js"></script>
 			<script>
-				/*if ('serviceWorker' in navigator) {
+				if ('serviceWorker' in navigator) {
 					navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
 					console.log('Service worker registered successfully');
 					}).catch(function(err) {
 					console.log('Service worker registration failed: ', err);
 					});
-				}*/
-				if ('serviceWorker' in navigator) {
-				  navigator.serviceWorker.register('serviceworker.js', {scope: 'assignment'}).then(function(registration) {
-					console.log('Service worker registered successfully');
-				  }).catch(function(err) {
-					console.log('Service worker registration failed: ', err);
-				  });
 				}
 
 			</script>
