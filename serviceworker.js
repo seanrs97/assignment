@@ -78,6 +78,7 @@ var CACHED_URLS = [
   BASE_PATH + 'event-default.png',
   BASE_PATH + 'min-style.css',
   BASE_PATH + 'offlinemap.jpg',
+  BASE_PATH + 'events.json',
   
   
   // Stylesheets and fonts
@@ -163,7 +164,7 @@ self.addEventListener('fetch', function(event) {
       })
     );
   // Handle requests for event images.
-  } else if (requestURL.pathname.includes('/eventsimages/')) {
+  } else if (requestURL.pathname.includes('/')) {
     event.respondWith(
       caches.open(CACHE_NAME).then(function(cache) {
         return cache.match(event.request).then(function(cacheResponse) {
@@ -171,7 +172,7 @@ self.addEventListener('fetch', function(event) {
             cache.put(event.request, networkResponse.clone());
             return networkResponse;
           }).catch(function() {
-            return cache.match('appimages/event-default.png');
+            return cache.match('event-default.png');
           });
         });
       })
@@ -185,7 +186,7 @@ self.addEventListener('fetch', function(event) {
             cache.put(event.request, networkResponse.clone());
             return networkResponse;
           }).catch(function() {
-            return cache.match('appimages/news-default.jpg');
+            return cache.match('news-default.jpg');
           });
         });
       })
