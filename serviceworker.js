@@ -1,4 +1,4 @@
-var CACHE_NAME = 'gih-cache';
+var CACHE_NAME = 'gih-cache-v5';
 var CACHED_URLS = [
   'offline.html',
   'mystyles.css’,
